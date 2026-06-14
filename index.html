@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal website for Jinho Kim.">
-  <title>Jinho Kim | Personal Website</title>
+  <meta name="description" content="Personal portfolio website for Jinho Kim, architecture student at Seoul National University.">
+  <title>Jinho Kim | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,115 +12,157 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Jinho Kim home">Jinho Kim</a>
-      <ul class="nav-links">
+      <a class="brand" href="#about" aria-label="Jinho Kim portfolio home">
+        <span class="brand-mark" aria-hidden="true">JK</span>
+        <span>Jinho Kim</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#future-courses">Future Courses</a></li>
+        <li><a href="#ai-usage">AI Usage</a></li>
       </ul>
-      <a class="nav-cta" href="assets/cv.pdf">CV</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="intro-title">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <p class="badge">Personal Website</p>
-          <h1 id="intro-title">Jinho Kim</h1>
-          <p class="intro">
-            I am building a practical foundation in software, problem solving,
-            and reliable web experiences.
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-shell about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1 id="about-title">Jinho Kim</h1>
+          <p class="lead">
+            I explore new urban possibilities and spatial values by combining architectural design with computer science. I am deeply interested in architectural automation and smart housing environments utilizing data structures and programming.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="assets/cv.pdf">View CV</a>
-            <a class="button secondary" href="https://github.com/xxl4v4xx">GitHub</a>
+          <div class="contact-row" aria-label="Contact links">
+            <a href="mailto:asyente@snu.ac.kr">asyente@snu.ac.kr</a>
+            <a href="https://github.com/xxl4v4xx">GitHub</a>
           </div>
         </div>
 
-        <figure class="portrait-card">
-          <img src="assets/profile.jpg" alt="Portrait of Jinho Kim" width="398" height="530">
-          <figcaption>Available for focused software and web projects.</figcaption>
-        </figure>
+        <aside class="profile-panel" aria-label="Profile summary">
+          <img src="assets/profile.jpg" alt="Profile Avatar" style="border-radius: 50%; width: 150px;">
+          <dl class="fact-list">
+            <div>
+              <dt>Name</dt>
+              <dd>Name: Jinho Kim</dd>
+            </div>
+            <div>
+              <dt>Major</dt>
+              <dd>Major: Architecture, Seoul National University</dd>
+            </div>
+            <div>
+              <dt>Short Intro</dt>
+              <dd>Short Intro: I explore new urban possibilities and spatial values by combining architectural design with computer science. I am deeply interested in architectural automation and smart housing environments utilizing data structures and programming.</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd>Contact: Email: asyente@snu.ac.kr | GitHub: https://github.com/xxl4v4xx</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
 
-        <div class="stickers" aria-hidden="true">
-          <span class="sticker sky"></span>
-          <span class="sticker purple"></span>
-          <span class="sticker pink"></span>
-          <span class="sticker orange"></span>
-          <span class="sticker teal"></span>
-          <span class="sticker green"></span>
+    <section class="section" id="cv" aria-labelledby="cv-title">
+      <div class="section-shell two-column">
+        <div class="section-heading">
+          <p class="eyebrow">CV / Resume</p>
+          <h2 id="cv-title">CV / Resume</h2>
+        </div>
+
+        <div class="content-card">
+          <dl class="detail-list">
+            <div>
+              <dt>Education</dt>
+              <dd>Education: Seoul National University</dd>
+            </div>
+            <div>
+              <dt>Skills</dt>
+              <dd>Skills: C++, Java, Python, Rhino, Grasshopper, Revit, AutoCAD</dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>Experience: Architectural Intern at Heerim Architects &amp; Planners</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">A simple home for my background and work.</h2>
-      </div>
-      <p>
-        This site collects my current interests, public links, and resume in one
-        GitHub Pages-friendly place. The focus is clarity: readable content,
-        accessible structure, and a calm page that stays easy to update.
-      </p>
-    </section>
+    <section class="section section-muted" id="projects" aria-labelledby="projects-title">
+      <div class="section-shell">
+        <div class="section-heading wide">
+          <p class="eyebrow">Activities / Projects</p>
+          <h2 id="projects-title">Activities / Projects</h2>
+        </div>
 
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <p class="eyebrow">Work</p>
-        <h2 id="work-title">Current areas of interest</h2>
-      </div>
-      <div class="cards" role="list">
-        <article class="card" role="listitem">
-          <span class="card-dot teal" aria-hidden="true"></span>
-          <h3>Web Development</h3>
-          <p>Creating responsive pages with accessible structure and maintainable styling.</p>
-        </article>
-        <article class="card" role="listitem">
-          <span class="card-dot purple" aria-hidden="true"></span>
-          <h3>Programming</h3>
-          <p>Practicing core software concepts through focused projects and experiments.</p>
-        </article>
-        <article class="card" role="listitem">
-          <span class="card-dot orange" aria-hidden="true"></span>
-          <h3>Documentation</h3>
-          <p>Keeping work understandable with direct writing and organized project notes.</p>
-        </article>
+        <div class="project-grid" role="list">
+          <article class="project-card" role="listitem">
+            <span class="project-index">01</span>
+            <h3>Architectural Design Studio 4-1 Project</h3>
+            <p>Architectural Design Studio 4-1 Project: Designed a shared housing model integrating AI and robotics to address the isolation problem of single-person households.</p>
+          </article>
+
+          <article class="project-card" role="listitem">
+            <span class="project-index">02</span>
+            <h3>BIPV Automation Plugin 'SunCircuit'</h3>
+            <p>BIPV Automation Plugin 'SunCircuit': Developed a C# based plugin for Grasshopper that automates the placement of Building-Integrated Photovoltaics (BIPV).</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section resume" id="resume" aria-labelledby="resume-title">
-      <div>
-        <p class="eyebrow">CV</p>
-        <h2 id="resume-title">Resume</h2>
-        <p>
-          Open my current CV as a PDF. The file is stored locally in this
-          repository so it works cleanly on GitHub Pages.
-        </p>
+    <section class="section" id="future-courses" aria-labelledby="courses-title">
+      <div class="section-shell two-column">
+        <div class="section-heading">
+          <p class="eyebrow">Future Courses</p>
+          <h2 id="courses-title">Future Courses I Plan to Take</h2>
+        </div>
+
+        <ul class="course-list" aria-label="Future courses">
+          <li>Architectural Design Studio 5-1</li>
+          <li>Building System</li>
+          <li>Computer Architecture</li>
+        </ul>
       </div>
-      <a class="button primary" href="assets/cv.pdf" aria-label="Open Jinho Kim CV PDF">
-        Open CV PDF
-      </a>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Let's connect.</h2>
+    <section class="section section-muted" id="ai-usage" aria-labelledby="ai-title">
+      <div class="section-shell two-column">
+        <div class="section-heading">
+          <p class="eyebrow">AI Usage</p>
+          <h2 id="ai-title">AI Usage</h2>
+        </div>
+
+        <div class="content-card">
+          <dl class="detail-list">
+            <div>
+              <dt>Tool</dt>
+              <dd>Tool: Gemini, Codex</dd>
+            </div>
+            <div>
+              <dt>Prompt</dt>
+              <dd>Prompt: "Create a modern, responsive single-page personal portfolio website using HTML, CSS, and JavaScript. Include a sticky navigation menu..."</dd>
+            </div>
+          </dl>
+        </div>
       </div>
-      <p>
-        You can find my public work and updates on GitHub.
-      </p>
-      <ul class="contact-links" aria-label="Contact links">
-        <li><a href="https://github.com/xxl4v4xx">github.com/xxl4v4xx</a></li>
-      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Jinho Kim. Built for GitHub Pages.</p>
+    <p>&copy; <span id="current-year">2026</span> Jinho Kim. Portfolio website.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
